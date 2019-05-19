@@ -1,0 +1,68 @@
+.navbar {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    flex: 1;
+
+    li {
+      color: white;
+      padding: 0 20px;
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.logo {
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 50%;
+  border: 20px solid rgb(181, 0, 0);
+  background: white;
+}
+
+
+.hero {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+
+  &:after,
+  &__overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+  }
+
+  &:after {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.53);
+  }
+
+  .hero__overlay {
+    background: #000;
+    background-image: image-url("couple_training.jpg");
+    opacity: 1;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
