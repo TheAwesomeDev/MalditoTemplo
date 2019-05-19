@@ -48,6 +48,44 @@
   }
 
   &--home {
+    .hero__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .hero__headline {
+        h1 {
+          margin: 0px;
+          font-weight: 900;
+          background-image: image-url("woman-weightlift.jpg");
+          background-position-y: 37%;
+          background-size: cover;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          overflow: hidden;
+          border-bottom: 4px solid #b50000;
+
+          span {
+            &:first-child {
+              font-size: 14rem;
+            }
+
+            &:last-child {
+              font-size: 12rem;
+            }
+          }
+        }
+
+        .temple__values {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 23px;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+
     .hero__right {
       background: #000;
       background-image: image-url("couple_training.jpg");
