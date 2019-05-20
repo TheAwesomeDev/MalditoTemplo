@@ -128,10 +128,6 @@
     margin-bottom: 75px;
     text-align: center;
   }
-
-  &__highlight-services {
-    background-image: image-url("dark-bg.jpg");
-  }
 }
 
 .highlight-services {
@@ -172,4 +168,147 @@
       }
     }
   }
+}
+
+
+.section__owner{
+  .hero {
+
+    &__left {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+      padding-right: 50px;
+
+      h1,
+      p {
+        text-align: right !important;
+        margin-bottom: 0px;
+      }
+    }
+
+    &__right {
+      background: image-url("fernando_atal.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.quote {
+  font-style: italic;
+}
+
+hr {
+  height: 2px;
+  width: 50%;
+  margin-right: 0px;
+  background-color: #b50000;
+  border: none;
+}
+
+.price-plan {
+  width: 100%;
+  background: white;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 4px solid #b50000;
+  border-radius: 20px;
+
+  .highlight-icon {
+    background: #f8f8f8;
+    border-radius: 20px;
+  }
+
+  [class^="flaticon-"],
+  [class*=" flaticon-"] {
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px;
+
+    &:before {
+      font-size: 125px;
+      color: #b50000;
+      margin: 0px;
+    }
+  }
+
+  &__description {
+    p {
+      margin-bottom: 0px;
+    }
+
+    p:first-child{
+      font-size: 35px;
+      font-weight: bold;
+      color: black;
+      margin-top: 25px;
+    }
+
+    p:last-child{
+      margin-bottom: 0px;
+      color: #b50000;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.section__pricing {
+  background-image: image-url("weightlift.jpg");
+  background-attachment: fixed;
+  position: relative;
+
+  .container {
+    z-index: 3;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.80);
+  }
+}
+
+.section__contact-us{
+  padding: 200px 0px;
+}
+
+
+input[type="text"],
+textarea{
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0px;
+}
+
+.button-primary {
+  background: linear-gradient(45deg, #b50000 0%, #720303 100%);
+  border: none !important;
+  font-weight: normal;
+}
+
+footer {
+  background: #120f0f;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

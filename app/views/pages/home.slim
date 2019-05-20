@@ -43,7 +43,7 @@
           | El camino del Templo
 
         p.section__intro
-          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa enim necessitatibus ducimus libero culpa corporis numquam non rem iste cumque, odit impedit placeat porro rerum doloremque vero cum sint?
+          | Este no es un gimnasio, es un templo de entrenamiento real, es solo personalizado donde se ve a la gente como personas no como un numero, son bienvenidos hombres y mujeres que tengan ganas de entrenar y darlo todo mientras dura su clase.
 
     .row
       .three.columns.highlight-services__item
@@ -81,3 +81,101 @@
 
         p
           | Antes de que te des cuenta, habrás conseguido tu meta, y querrás continuar con nosotros disfrutando de tu nuevo cuerpo, mentalidad ganadora y estilo de vida saludable.
+
+
+.container.section.section__owner.hero
+  .hero__left
+    h1.section__title
+      | Entrena con el mejor
+
+    p.section__intro
+      | Fernando Atal es el fundador de Maldito Templo, Profesor de Educación Física, entrenador de atletas de alto rendimiento y culturista seleccionado nacional de Chile.
+
+    hr/
+
+    p.quote
+      | "Trabajaremos en conjunto para lograr tu objetivo a corto y largo plazo tanto nutricional como deportivamente. Si estas dispuesto a entrenar de verdad, bienvenido al Templo Maldito"
+  .hero__right
+
+
+
+.section.section__pricing
+  .container
+    .row
+      .offset-by-two.eight.columns
+        h1.section__title
+          | Nuestros Precios
+
+        p.section__intro
+          | Durante tus sesiones contarás con una hora fija de entrenamiento exclusiva para ti junto a uno de nuestros entrenadores, serás sometido a pruebas periódicas para evaluar tu progreso y te ofreceremos pautas alimenticias para optimizar tu rendimiento. Todo incluído en cualquiera de los planes.
+
+    .row
+      .four.columns
+        .price-plan
+          .highlight-icon
+            .flaticon-gym-1
+          .price-plan__description
+            p
+              | 200.000 CLP
+            p
+              | 3 días x Semana
+      .four.columns
+        .price-plan
+          .highlight-icon
+            .flaticon-gym-1
+          .price-plan__description
+            p
+              | 220.000 CLP
+            p
+              | 4 días x Semana
+      .four.columns
+        .price-plan
+          .highlight-icon
+            .flaticon-gym-1
+          .price-plan__description
+            p
+              | 240.000 CLP
+            p
+              | 5 días x Semana
+
+
+.section.section__contact-us
+  .container
+    h1.section__title
+      | Contáctanos
+
+    p.section__intro
+      | No pierdas mas tiempo, acércate a nuestras instalaciones o déjanos un mensaje para agendar tu evaluación gratuita y comenzar tu camino en el templo.
+
+    .row
+      .six.columns
+        .mapouter
+          .gmap_canvas
+            iframe#gmap_canvas frameborder="0" height="240" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=avenida%20francisco%20bilbao%205353&t=&z=13&ie=UTF8&iwloc=&output=embed" width="514"
+
+
+
+      .six.columns
+        .row
+          .six.columns
+            input type="text" placeholder="Nombre"/
+          .six.columns
+            input type="text" placeholder="Apellido"/
+
+        .row
+          .six.columns
+            input type="text" placeholder="Email"/
+          .six.columns
+            input type="text" placeholder="Teléfono"/
+
+        .row
+          .twelve.columns
+            textarea# name="mensaje" cols="30" rows="10" placeholder="Mensaje"
+
+        input.button-primary type="submit" value="Enviar"
+
+footer
+  | Copyright 2019. Desarrollado por Templo Maldito
+
+css:
+  .mapouter position:relative;text-align:right;height:240px;width:514px;}.gmap_canvas {overflow:hidden;background:none!important;height:240px;width:514px;
